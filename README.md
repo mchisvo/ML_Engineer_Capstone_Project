@@ -1,9 +1,9 @@
 # Capstone Project: Machine Learning Engineer Nano Degree
 ## Detecting Fake Twitter Followers
 
-[Full Project Report](https://github.com/mchisvo/ML_Engineer_Capstone_Project/Report/Capstone_Project.pdf)
+[Full Project Report](https://github.com/mchisvo/ML_Engineer_Capstone_Project/blob/main/Report/Capstone_Project.pdf)
 
-[Notebooks](https://github.com/mchisvo/ML_Engineer_Capstone_Project/Capstone-Project/)
+[Notebooks](https://github.com/mchisvo/ML_Engineer_Capstone_Project/tree/main/Capstone-Project)
 
 
 ### Project Description
@@ -29,7 +29,7 @@ The high accuracy scores suggest this is an easy problem to solve using a binary
 
 ### Run
 
-Run [Jupyter Notebooks](https://github.com/mchisvo/ML_Engineer_Capstone_Project/Capstone-Project/) in sequential order:
+Run [Jupyter Notebooks](https://github.com/mchisvo/ML_Engineer_Capstone_Project/tree/main/Capstone-Project) in sequential order:
 
 1\. 1_Data_Cleaning_&_Feature_Engineering.ipynb
 
