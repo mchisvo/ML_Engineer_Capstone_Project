@@ -1,0 +1,79 @@
+Field value,Type,Description,How it can be used
+id,string,"The unique identifier of this user.
+""id"": ""2244994945""",Use this to programmatically retrieve information about a specific Twitter user.
+name,string,"The name of the user, as they’ve defined it on their profile. Not necessarily a person’s name. Typically capped at 50 characters, but subject to change.
+""name"": ""Twitter Dev""",
+username,string,"The Twitter screen name, handle, or alias that this user identifies themselves with. Usernames are unique but subject to change. Typically a maximum of 15 characters long, but some historical accounts may exist with longer names.
+""username"": ""TwitterDev""",
+created_at,date (ISO 8601),"The UTC datetime that the user account was created on Twitter.
+""created_at"": ""2013-12-14T04:35:55.000Z""",Can be used to determine how long a someone has been using Twitter
+description,string,"The text of this user's profile description (also known as bio), if the user provided one.
+""description"": ""The voice of Twitter's #DevRel team, and your official source for updates, news, & events about Twitter's API. \n\n#BlackLivesMatter""",
+entities,object,"Contains details about text that has a special meaning in the user's description.
+""entities"": {
+ ""url"": {
+ ""urls"": [
+ {
+ ""start"": 0,
+ ""end"": 23,
+ ""url"": ""https://t.co/3ZX3TNiZCY"",
+ ""expanded_url"": ""/content/developer-twitter/en/community"",
+ ""display_url"": ""developer.twitter.com/en/community""
+ }
+ ]
+ },
+ ""description"": {
+ ""urls"": [
+ {
+ ""start"": 0,
+ ""end"": 23,
+ ""url"": ""https://t.co/3ZX3TNiZCY"",
+ ""expanded_url"": ""/content/developer-twitter/en/community"",
+ ""display_url"": ""developer.twitter.com/en/community""
+ },
+ ""hashtags"": [
+ {
+ ""start"": 23,
+ ""end"": 30,
+ ""tag"": ""DevRel""
+ },
+ {
+ ""start"": 113,
+ ""end"": 130,
+ ""tag"": ""BlackLivesMatter""
+ },
+ ""mentions"": [
+ {
+ ""start"": 0,
+ ""end"": 10,
+ ""tag"": ""TwitterDev""
+ },
+ ""cashtags"": [
+ {
+ ""start"": 12,
+ ""end"": 16,
+ ""tag"": ""twtr""
+ }
+ ]
+ }
+ }","Entities are JSON objects that provide additional information about hashtags, urls, user mentions, and cashtags associated with the description. Reference each respective entity for further details.
+All user start indices are inclusive, while all user end indices are exclusive."
+location,string,"The location specified in the user's profile, if the user provided one. As this is a freeform value, it may not indicate a valid location, but it may be fuzzily evaluated when performing searches with location queries.
+""location"": ""127.0.0.1""",
+pinned_tweet_id,string,"Unique identifier of this user's pinned Tweet.
+""pinned_tweet_id"": ""1255542774432063488""",Determine the Tweet pinned to the top of the user’s profile. Can potentially be used to determine the user’s language.
+profile_image_url,string,"The URL to the profile image for this user, as shown on the user's profile.
+""profile_image_url"": ""https://pbs.twimg.com/profile_images/1267175364003901441/tBZNFAgA_normal.jpg""",Can be used to download this user's profile image.
+protected,boolean,"Indicates if this user has chosen to protect their Tweets (in other words, if this user's Tweets are private).
+""protected"": false",
+public_metrics,object,"Contains details about activity for this user.
+""public_metrics"": { ""followers_count"": 507902, ""following_count"": 1863, ""tweet_count"": 3561, ""listed_count"": 1550 }","Can potentially be used to determine a Twitter user’s reach or influence, quantify the user’s range of interests, and the user’s level of engagement on Twitter."
+url,string,"The URL specified in the user's profile, if present.
+""url"": ""https://t.co/3ZX3TNiZCY""","A URL provided by a Twitter user in their profile. This could be a homepage, but is not always the case."
+verified,boolean,"Indicates if this user is a verified Twitter User.
+""verified"": true",Indicates whether or not this Twitter user has a verified account. A verified account lets people know that an account of public interest is authentic.
+withheld,object,"Contains withholding details for withheld content, if applicable.",
+followers_count,,,
+following_count,,,
+tweet_count,,,
+listed_count,,,
